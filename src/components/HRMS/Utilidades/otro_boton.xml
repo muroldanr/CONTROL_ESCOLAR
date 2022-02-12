@@ -1,0 +1,70 @@
+
+											<div className="col-lg-6 col-md-6">
+                                            {
+                                                this.state.sabanaData.length == 0 ?
+                                                 <React.Fragment>
+                                                 </React.Fragment> :
+                                                         <ExcelFile  className="col-lg-12" filename="Sabana Informe 911"      element={
+                                                            this.state.carrera ==="" ?
+                                                            <Button className="mb-3" width='100%' variant="success" size="lg" block disabled>
+                                                                Descargar Excel 
+                                                            </Button>:
+                                                            <Button className="mb-3" width='100%' variant="success" size="lg" block >
+                                                                Descargar Excel 
+                                                            </Button>
+                                                        }>
+                                                    <ExcelSheet data={this.state.sabanaData} name={this.state.carrera}>
+                                                        <ExcelColumn label="Matricula" value="Matricula"/>
+                                                        <ExcelColumn label="Adeuda" value="Adeuda"/>
+                                                        <ExcelColumn label="TiempoAdeudo" value="TiempoAdeudo"/>
+                                                        <ExcelColumn label="TipoIngreso" value="TipoIngreso"/>
+                                                        <ExcelColumn label="NombreCompleto" value="NombreCompleto"/>
+                                                        <ExcelColumn label="CeEstatus" value="CEEstatus"/>
+                                                        <ExcelColumn label="Licenciatura" value="Licenciatura"/>
+                                                        <ExcelColumn label="FechaIngreso" value="FechaIngreso"/>
+                                                        <ExcelColumn label="PaisOrigen" value="PaisOrigen"/>
+                                                        <ExcelColumn label="Forma" value="Forma"/>
+                                                        <ExcelColumn label="Acta de Nacimiento" value="ActaNacimiento"/>
+                                                        <ExcelColumn label="Certificado Secundaria" value="CertificadoSecundaria"/>
+                                                        <ExcelColumn label="Certificado Preparatoria" value="CertificadoPreparatoria"/>
+                                                        <ExcelColumn label="Cuenta Con Legalización" value="CuentaConLegalizacion"/>
+                                                        <ExcelColumn label="Equivalencia" value="Equivalencia"/>
+                                                        <ExcelColumn label="Certificado P. Universidad" value="CertificadoParcialUniversidad"/>
+                                                        <ExcelColumn label="Documento Inscripción" value="DocumentoInscripcion"/>
+                                                        <ExcelColumn label="Carta Compromiso" value="CartaCompromiso"/>
+                                                        <ExcelColumn label="Certificado Médico" value="CertificadoMedico"/>
+                                                        <ExcelColumn label="Fotos" value="Fotos"/>
+                                                        <ExcelColumn label="HojaDatosGenerales" value="HojaDatosGenerales"/>
+                                                        <ExcelColumn label="Aviso Privacidad" value="AvisoPrivacidad"/>
+                                                        <ExcelColumn label="Contrato" value="Contrato"/>
+                                                        <ExcelColumn label="Aviso Consentimiento" value="AvisoConsentimiento"/>
+                                                        <ExcelColumn label="Carta Cambio Carrera" value="CartaCambioCarrera"/>
+                                                        <ExcelColumn label="Reglamento" value="Reglamento"/>
+                                                        <ExcelColumn label="Notas" value="Notas"/>
+                                                        <ExcelColumn label="CicloActual" value="CicloCursa"/>
+                                                        <ExcelColumn label="Curp" value="Curp"/>
+                                                        <ExcelColumn label="Correo" value="Correo"/>
+                                                        <ExcelColumn label="TelefonoParticular" value="TelefonoParticular"/>
+                                                        <ExcelColumn label="Celular" value="Celular"/>
+                                                        <ExcelColumn label="Plan" value="Plan"/>
+                                                        {/*<ExcelColumn label="Continuidad" value="Continuidad"/>*/}
+                                                        <ExcelColumn label="SecundariaProcedencia" value="SecundariaProcedencia"/>
+                                                        <ExcelColumn label="PreparatoriaProcedencia" value="PreparatoriaProcedencia"/>
+                                                        <ExcelColumn label="UniversidadProcedencia" value="UniversidadProcedencia"/>
+                                                        <ExcelColumn label="Extranjero" value={(col) => col.Nacionalidad === "Mexicana" ? "NO" : "SI"}/>
+                                                        <ExcelColumn label="Estado" value="Estado"/>
+                                                        <ExcelColumn label="Calle" value="Calle"/>
+                                                        <ExcelColumn label="Colonia" value="Colonia"/>
+                                                        <ExcelColumn label="DelegacionOMunicipio" value="DelegacionOMunicipio"/>
+                                                        <ExcelColumn label="CP" value="CP"/>
+                                                        <ExcelColumn label="Nexterior" value="Nexterior"/>
+                                                        <ExcelColumn label="Ninterior" value="Ninterior"/>
+                                                        
+                                                        
+                                                        {/*<ExcelColumn label="Alumno" value="Alumno"/>*/}
+                                                    </ExcelSheet>
+                                                </ExcelFile>
+                                            }
+                                        
+
+                                        </div>

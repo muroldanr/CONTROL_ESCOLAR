@@ -1,0 +1,19 @@
+.dropdown-item-close{
+    color: #333537;
+    font-size: 14px;
+    padding: 10px;
+    margin: 0 -10px !important;
+    width: auto;
+    background-color: #fff !important;
+    border: none !important;
+}
+
+.dropdown-item-close:hover{
+    color: #333537;
+    font-size: 14px;
+    padding: 10px;
+    margin: 0 -10px !important;
+    width: auto;
+    background-color: rgb(239, 239, 239)!Important;
+    border: none !important;
+}
