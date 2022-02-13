@@ -4,9 +4,8 @@
 
 ## REPORTES DE DOCUMENTACIÓN ENTREGADA POR ALUMNO
 
-Registre y administre a sus clientes.
 
-![CHEESE!](public/registro.png)
+![CHEESE!](public/reportes.png)
 
 
 
