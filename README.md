@@ -1,8 +1,8 @@
-## Reportes
+## REGISTRO DE ALUMNO
 
 ![CHEESE!](public/registro.png)
 
-## Registro de clientes
+## REPORTES DE DOCUMENTACIÓN ENTREGADA POR ALUMNO
 
 Registre y administre a sus clientes.
 
